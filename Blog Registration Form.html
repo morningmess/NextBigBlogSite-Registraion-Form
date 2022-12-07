@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Registration Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="RegistrationStyle.css" rel="stylesheet">
+    </head>
+
+<!-- Try to remove the <input> element from inside <label> in hopes to editing the bottom margin so the label and input are closer to each other -->
+
+    <body>
+        <h1>Welcome to NextBigBlogSite™</h1>
+        <p>Please fill out this form with the required information.</p>
+        <form action="https://register-demo.freecodecamp.org" method="post">
+
+        <fieldset><!-- Basic Information -->
+            <label for="username">Username: <input type="text" required></label>
+            <label for="firstname">First Name: <input type="text" id="firstname" required></label>
+            <label for="email">Email: <input type="email" id="email" required></label>
+            <!-- <label for="age">Age (optional): <input type="number"></label>
+                Add Birthday Input option -->
+            <label for="password">Password: <input type="password" id="password" required></label>
+            <label for="passwordconfirm">Confirm Password: <input type="password" id="passwordconfirm" required></label>
+            <label for="pfp">Upload Profile Picture: <input type="file"></label>
+        </fieldset>
+
+        <fieldset><!-- Account Type & Role/Title -->
+            <label for="role">Which option best describes your current title?
+            <select for="role" required>
+                <option id="select">Select Current Role</option>
+                <option id="student">Student</option>
+                <option id="fulltimejob">Full Time Job</option>
+                <option id="parttimejob">Part Time Job</option>
+                <option id="none">Prefer Not To Say</option>
+                <option id="other">Other (please state below)</option>
+            </select>
+            </label>
+            <label for="other-role">Other: <textarea id="other-role" placeholder="Describe Your Role" rows="3"></textarea></label>
+        </fieldset>
+
+
+        </form>
+
+    </body>
+
+
+</html>
